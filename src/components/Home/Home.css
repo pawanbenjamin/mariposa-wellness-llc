@@ -1,0 +1,89 @@
+.hero-block {
+  /* scroll-snap-align: start; */
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: background 1.5s linear;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: flex-start;
+  left: 0;
+}
+
+/* @media screen and (min-width: 400px) {
+  .hero-block {
+    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
+    background-position: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background 1.5s linear;
+  }
+  .h1 {
+    font-size: 60px;
+  }
+} */
+
+.text {
+  text-align: center;
+  margin-top: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+h1 {
+  margin: 0;
+  font-size: 80px;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+ul,
+li {
+  color: white;
+}
+
+.filler {
+  height: 200px;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  text-shadow: 2px 2px 2px black;
+}
+
+.book {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  /* border-radius: 50px; */
+  box-shadow: 0 6px #dab94e;
+  font-family: "DM Serif Display";
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  background: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  /* position: relative; */
+}
+
+.book:hover {
+  color: gold;
+}

@@ -1,0 +1,21 @@
+.treatment {
+}
+
+.treat-container {
+  /* margin-left: 20px; */
+}
+
+.info1 {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 50px;
+  /* background-image: url("../assets//treatments/core-jen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.info2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

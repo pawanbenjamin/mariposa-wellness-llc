@@ -1,0 +1,10 @@
+.FAQ p {
+  color: black;
+  margin-right: 20%;
+  margin-left: 20%;
+  /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
+}
+
+.FAQ h1 {
+  margin-left: 20px;
+}

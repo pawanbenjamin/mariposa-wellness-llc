@@ -1,0 +1,42 @@
+/* .logo {
+  height: 90px;
+  padding: 20px;
+  filter: drop-shadow(0 0 0.25rem rgb(44, 42, 43));
+} */
+
+.menu-icon {
+  margin-top: 24px;
+  margin-right: 15px;
+  color: purple;
+}
+
+.menu-icon:hover {
+  margin-top: 24px;
+  margin-right: 15px;
+  color: gold;
+}
+
+.stylesObj {
+  scroll-snap-align: start;
+  display: flex;
+
+  justify-content: flex-end;
+  height: 80px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.linkStyle {
+  margin-left: 10px;
+  margin-top: 30px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.logoStyle {
+  padding: 10px;
+  height: 80px;
+}

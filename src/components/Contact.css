@@ -1,0 +1,26 @@
+/* .form-cont {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+} */
+
+.contact-page {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.label {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.size1 {
+  font-size: 20px;
+}

@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.image-cont-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.image-cont-4 {
+  clip-path: polygon(
+    71% 0,
+    94% 22%,
+    100% 60%,
+    85% 100%,
+    25% 100%,
+    0 61%,
+    36% 0
+  );
+}
+
+.header {
+  margin-left: 10px;
+}
+
+.bio1 {
+  display: flex;
+  justify-content: center;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.container p {
+  color: white;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  text-align: left;
+}
+.mari-karuna {
+  clip-path: polygon(90% 0, 100% 50%, 86% 100%, 29% 100%, 0 68%, 0% 0%);
+}
+
+.withRic {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  /* margin-right: 15%;
+  margin-left: 15%; */
+}
+
+.withRic p {
+  text-align: left;
+}
+
+.final {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.final .bio1 {
+  width: 400px;
+  margin: 10px;
+}
