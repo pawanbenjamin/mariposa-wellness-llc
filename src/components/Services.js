@@ -3,7 +3,7 @@ import "./Services.css";
 
 function Services(props) {
   return (
-    <div>
+    <div className="big-container">
       <div className="services" id="pre-post">
         <h1 className="title">
           Prenatal / <br />

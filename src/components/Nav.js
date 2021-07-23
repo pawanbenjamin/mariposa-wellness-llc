@@ -92,28 +92,75 @@ function Nav(props) {
             Open Menu
           </MenuRoundedIcon>
           <Menu
+            style={{
+              "& .MuiPaper-root": {
+                backgroundColor: "lightblue",
+              },
+            }}
             id="simple-menu"
             anchorEl={anchorEl}
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem component={Link} to="/" onClick={handleClose}>
+            <MenuItem
+              style={{
+                color: "black",
+              }}
+              component={Link}
+              to="/"
+              onClick={handleClose}
+            >
               Home
             </MenuItem>
-            <MenuItem component={Link} to="/about" onClick={handleClose}>
+            <MenuItem
+              style={{
+                color: "black",
+              }}
+              component={Link}
+              to="/about"
+              onClick={handleClose}
+            >
               About
             </MenuItem>
-            <MenuItem component={Link} to="/about" onClick={handleClose}>
+            <MenuItem
+              style={{
+                color: "black",
+              }}
+              component={Link}
+              to="/treatments"
+              onClick={handleClose}
+            >
               Treatments
             </MenuItem>
-            <MenuItem component={Link} to="/about" onClick={handleClose}>
+            <MenuItem
+              style={{
+                color: "black",
+              }}
+              component={Link}
+              to="/services"
+              onClick={handleClose}
+            >
               Services
             </MenuItem>
-            <MenuItem component={Link} to="/about" onClick={handleClose}>
+            <MenuItem
+              style={{
+                color: "black",
+              }}
+              component={Link}
+              to="/FAQ"
+              onClick={handleClose}
+            >
               FAQ
             </MenuItem>
-            <MenuItem component={Link} to="/about" onClick={handleClose}>
+            <MenuItem
+              style={{
+                color: "black",
+              }}
+              component={Link}
+              to="/contact"
+              onClick={handleClose}
+            >
               Contact
             </MenuItem>
           </Menu>

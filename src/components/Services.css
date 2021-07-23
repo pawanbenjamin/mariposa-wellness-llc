@@ -1,7 +1,14 @@
 .services {
-  /* scroll-snap-align: start; */
   /* height: 1000px; */
+  scroll-snap-align: start;
   text-align: center;
+  height: 100vh;
+  overflow: scroll;
+  margin-bottom: 20%;
+}
+
+.big-container {
+  scroll-snap-type: y mandatory;
 }
 
 .content {
