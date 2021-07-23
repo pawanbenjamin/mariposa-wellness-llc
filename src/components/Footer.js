@@ -37,15 +37,15 @@ function Footer(props) {
         <Link style={{ textDecoration: "none" }} to="/contact">
           <h4 style={linkStyle}>Contact</h4>
         </Link>
-        <span
-          style={{
-            margin: "8px",
-            fontSize: "12px",
-          }}
-        >
-          ©2021 Mariposa Wellness
-        </span>
       </Hidden>
+      <span
+        style={{
+          margin: "8px",
+          fontSize: "12px",
+        }}
+      >
+        ©2021 Mariposa Wellness
+      </span>
     </div>
   );
 }
