@@ -16,6 +16,7 @@
 }
 
 .title {
+  margin-left: 20px;
   text-align: left;
 }
 
@@ -70,8 +71,9 @@ li {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: black;
+  color: whitesmoke;
   text-shadow: none;
   width: 75%;
   font-size: 28px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }

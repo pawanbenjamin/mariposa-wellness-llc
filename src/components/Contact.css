@@ -12,7 +12,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: black;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 .label {

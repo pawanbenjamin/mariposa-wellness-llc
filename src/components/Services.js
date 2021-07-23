@@ -37,8 +37,15 @@ function Services(props) {
         </div>
       </div>
       <div className="services" id="gender">
-        <h1>Gender Inclusive Pelvic Health</h1>
+        <h1>
+          Gender Inclusive
+          <br /> Pelvic Health
+        </h1>
         <div className="content2">
+          <p className="gender-quote">
+            At Mariposa wellness we are dedicated to inclusive rehabilitation
+            for patients across the gender spectrum.
+          </p>
           <div>
             <h2>Common conditions treated:</h2>
             <ul>
@@ -57,10 +64,6 @@ function Services(props) {
               <li>Vaginoplasty</li>
             </ul>
           </div>
-          <p className="gender-quote">
-            At Mariposa wellness we are dedicated to inclusive rehabilitation
-            for patients across the gender spectrum.
-          </p>
         </div>
       </div>
       <div className="services" id="female">
@@ -191,19 +194,31 @@ function Services(props) {
       </div>
 
       <div className="services" id="ed">
-        <h1>Community Education Classes</h1>
-        <p>
+        <h1>
+          Community <br />
+          Education Classes
+        </h1>
+        <p
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "50%",
+            margin: "auto",
+          }}
+        >
           If you are interested in having a physical therapist come out and talk
           with your new parents group please email admin@mariposawellnessllc.com
         </p>
-        <h2>Class topics include:</h2>
-        <ul>
-          <li>How to care for the pregnant body</li>
-          <li>Physical therapy considerations for healing postpartum</li>
-          <li>Sexual health throughout the lifespan</li>
-          <li>How to manage prolapse</li>
-          <li>How to manage incontinence</li>
-        </ul>
+        <div className="male">
+          <ul>
+            <h2>Class topics include:</h2>
+            <li>How to care for the pregnant body</li>
+            <li>Physical therapy considerations for healing postpartum</li>
+            <li>Sexual health throughout the lifespan</li>
+            <li>How to manage prolapse</li>
+            <li>How to manage incontinence</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

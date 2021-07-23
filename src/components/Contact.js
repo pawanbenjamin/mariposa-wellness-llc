@@ -32,7 +32,9 @@ function Contact(props) {
     <>
       <h1
         style={{
-          marginLeft: "20px",
+          marginTop: "1em",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         Contact / Location
