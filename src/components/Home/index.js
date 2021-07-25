@@ -5,6 +5,9 @@ import $ from "jquery";
 
 import "./Home.css";
 
+import logo from "../../assets/logo.svg";
+import purple from "../../assets/Purple.png";
+
 import one from "../../assets/ban-imgs/one.jpg";
 import two from "../../assets/ban-imgs/two.jpg";
 import three from "../../assets/ban-imgs/three.jpg";
@@ -35,27 +38,37 @@ function Home(props) {
   }, [index]);
 
   return (
-    <section
-      className="hero-block"
-      style={{
-        backgroundImage: `url(${slideImages[index]})`,
-      }}
-    >
-      <div className="left-side">
-        <h1
-          style={{
-            marginLeft: "5%",
-            textAlign: "center",
-          }}
-        >
-          Welcome to <br />
-          Mariposa Wellness
-        </h1>
-        <div className="button-cont">
-          <a href="https://bchwbooking.clientsecure.me/">
-            <button className="book">Book an Appointment</button>
-          </a>
+    <>
+      <section
+        className="hero-block"
+        style={{
+          backgroundImage: `url(${slideImages[index]})`,
+        }}
+      >
+        <div className="left-side">
+          <h1
+            style={{
+              marginLeft: "5%",
+              textAlign: "center",
+            }}
+          >
+            Welcome to <br />
+            Mariposa Wellness
+          </h1>
+          <div className="button-cont">
+            <a href="https://bchwbooking.clientsecure.me/">
+              <button className="book">Book an Appointment</button>
+            </a>
+          </div>
+          {/* <div className="logo">
+            <img src={logo} />
+          </div> */}
         </div>
+
+        {/* <div className="filler"></div> */}
+      </section>
+      <div className="logo">
+        <img src={purple} />
       </div>
       <p className="text">
         At Mariposa Wellness I combine a variety of manual medicine modalities
@@ -65,8 +78,7 @@ function Home(props) {
         you with knowledge regarding your body and particular condition and
         techniques for self care.
       </p>
-      {/* <div className="filler"></div> */}
-    </section>
+    </>
   );
 }
 

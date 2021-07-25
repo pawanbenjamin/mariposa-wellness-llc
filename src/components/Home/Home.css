@@ -1,7 +1,7 @@
 .hero-block {
   /* scroll-snap-align: start; */
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -10,7 +10,14 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   align-items: flex-start;
   left: 0;
-  overflow: scroll;
+  /* overflow: scroll; */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  height: 300px;
 }
 
 /* @media screen and (min-width: 400px) {
@@ -30,9 +37,10 @@
 
 .text {
   text-align: center;
-  margin-top: 30%;
+  margin-top: 3%;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 10%;
   font-size: 24px;
   color: white;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -41,6 +49,13 @@
 @media screen and (max-width: 800px) {
   .text {
     margin-top: 15%;
+  }
+  .button-cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 2px black;
   }
 }
 
@@ -66,7 +81,7 @@ li {
 .button-cont {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 0px;
   text-shadow: 2px 2px 2px black;
 }

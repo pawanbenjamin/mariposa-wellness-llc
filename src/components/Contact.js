@@ -30,15 +30,7 @@ function Contact(props) {
 
   return (
     <>
-      <h1
-        style={{
-          marginTop: "1em",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        Contact / Location
-      </h1>
+      <h1 className="header">Contact / Location</h1>
       <div className="contact-page">
         {/* <form className="form-cont">
         <TextField name="name" type="text" placeholder="Name" />

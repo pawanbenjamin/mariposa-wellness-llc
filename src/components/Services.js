@@ -114,6 +114,7 @@ function Services(props) {
             justifyContent: "center",
             width: "50%",
             margin: "auto",
+            fontSize: "24px",
           }}
         >
           Our specialized Pelvic Floor Physical Therapists also treat conditions
