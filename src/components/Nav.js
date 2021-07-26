@@ -40,13 +40,24 @@ function Nav(props) {
   // }, []);
 
   const [anchorEl, setAnchorEl] = useState(null);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
+  const handleClickServ = (e) => {
+    setAnchorEl(e.currentTarget);
+    setOpenMenu(true);
+  };
+
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleCloseServ = (e) => {
+    setAnchorEl(null);
+    setOpenMenu(false);
   };
 
   return (
@@ -64,9 +75,106 @@ function Nav(props) {
           <Link className="linkStyle" to="/treatments">
             <h4>Treatments</h4>
           </Link>
-          <Link className="linkStyle" to="/services">
+
+          <Link
+            className="linkStyle"
+            to="/services"
+            aria-owns={anchorEl ? "simple-menu-1" : undefined}
+            aria-haspopup={anchorEl ? "true" : undefined}
+            onMouseOver={(e) => handleClickServ(e)}
+          >
             <h4>Services</h4>
           </Link>
+          {/* need menu for this dropdown here */}
+
+          <Menu
+            id="simple-menu-1"
+            anchorEl={anchorEl}
+            open={openMenu}
+            onClose={handleClose}
+            // classes={{ paper: classes.menu }}
+            MenuListProps={{ onMouseLeave: handleCloseServ }}
+            elevation={0}
+            style={{ zIndex: 1302 }}
+          >
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#pre-post"
+            >
+              <MenuItem
+                className="menu-item"
+                // component={Link}
+                // to="/services#pre-post"
+                onClick={handleClose}
+              >
+                Prenatal / Postpartum
+              </MenuItem>
+            </a>
+
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#gender"
+            >
+              <MenuItem
+                className="menu-item"
+                // component={Link}
+                // to="/services#gender"
+                onClick={handleClose}
+              >
+                Gender Inclusive Pelvic Health
+              </MenuItem>
+            </a>
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#female"
+            >
+              <MenuItem
+                className="menu-item"
+                // component={Link}
+                // to="/"
+                onClick={handleClose}
+              >
+                Female Pelvic Health
+              </MenuItem>
+            </a>
+            <a className="anchor" onClick="return false;" href="/services#male">
+              <MenuItem
+                className="menu-item"
+                // component={Link}
+                // to="/"
+                onClick={handleClose}
+              >
+                Male Pelvic Health
+              </MenuItem>
+            </a>
+            <a
+              className="anchor"
+              onClick="return false;"
+              href="/services#chron"
+            >
+              <MenuItem
+                className="menu-item"
+                // component={Link}
+                // to="/"
+                onClick={handleClose}
+              >
+                Chronic Pain
+              </MenuItem>
+            </a>
+            <a className="anchor" onClick="return false;" href="/services#ed">
+              <MenuItem
+                className="menu-item"
+                component={Link}
+                to="/services#ed"
+                onClick={handleClose}
+              >
+                Community Education
+              </MenuItem>
+            </a>
+          </Menu>
           <Link className="linkStyle" to="/FAQ">
             <h4>FAQ</h4>
           </Link>

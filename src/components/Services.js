@@ -4,12 +4,12 @@ import "./Services.css";
 function Services(props) {
   return (
     <div className="big-container">
-      <div className="services" id="pre-post">
-        <h1 className="title">
-          Prenatal / <br />
-          Postpartum
-        </h1>
-        <div className="content">
+      <div className="service" id="pre-post">
+        <div>
+          <h1>
+            Prenatal / <br />
+            Postpartum
+          </h1>
           <p className="fem">
             During pregnancy and in the postpartum phase, changes in hormones,
             the alignment of the pregnant person (and fetus), and the birthing
@@ -19,33 +19,35 @@ function Services(props) {
             alignment to allow for greater ease with labor and delivery, and
             help accelerate the new parent’s recovery after childbirth.
           </p>
-          <div>
-            <h2>Common conditions treated:</h2>
-            <ul>
-              <li>Pregnancy related Back/ Hip Pain</li>
-              <li>Post-Partum urinary/ fecal incontinence</li>
-              <li>Diastasis Recti</li>
-              <li>Pelvic Organ Prolapse</li>
-              <li>C-Section Scar Treatment</li>
-              <li>Postural pain due to wearing, carrying, nursing baby</li>
-              <li>Symphysis pubis dysfunction (SPD)</li>
-              <li>Sexual Dysfunction</li>
-              <li>Sacro-iliac joint dysfunction</li>
-              <li>Pelvic instability</li>
-            </ul>
-          </div>
+        </div>
+        <div>
+          <h2>Common conditions treated:</h2>
+          <ul>
+            <li>Pregnancy related Back/ Hip Pain</li>
+            <li>Post-Partum urinary/ fecal incontinence</li>
+            <li>Diastasis Recti</li>
+            <li>Pelvic Organ Prolapse</li>
+            <li>C-Section Scar Treatment</li>
+            <li>Postural pain due to wearing, carrying, nursing baby</li>
+            <li>Symphysis pubis dysfunction (SPD)</li>
+            <li>Sexual Dysfunction</li>
+            <li>Sacro-iliac joint dysfunction</li>
+            <li>Pelvic instability</li>
+          </ul>
         </div>
       </div>
-      <div className="services" id="gender">
-        <h1>
-          Gender Inclusive
-          <br /> Pelvic Health
-        </h1>
-        <div className="content2">
+      <div className="service" id="gender">
+        <div>
+          <h1>
+            Gender Inclusive
+            <br /> Pelvic Health
+          </h1>
           <p className="gender-quote">
             At Mariposa wellness we are dedicated to inclusive rehabilitation
             for patients across the gender spectrum.
           </p>
+        </div>
+        <div className="content2">
           <div>
             <h2>Common conditions treated:</h2>
             <ul>
@@ -66,9 +68,9 @@ function Services(props) {
           </div>
         </div>
       </div>
-      <div className="services" id="female">
-        <h1>Female Pelvic Health</h1>
-        <div className="content3">
+      <div className="service" id="female">
+        <div>
+          <h1>Female Pelvic Health</h1>
           <p className="fem">
             At Mariposa Wellness we specialize in the treatment of the following
             conditions specific to a womans uro-gynecological, sexual, and
@@ -79,55 +81,50 @@ function Services(props) {
             pelvic alignment, and restore normal functioning in the organs of
             the abdomino-pelvic area.
           </p>
-          <div>
-            <h2>Common conditions treated:</h2>
-            <ul>
-              <li>Vulvodynia/Vestibulodynia</li>
-              <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
-              <li>Pudendal Neuralgia</li>
-              <li>Endometriosis</li>
-              <li>Urgency/ Frequent Urination</li>
-              <li>Urinary/ Fecal Incontinence</li>
-              <li>Abdominal pain syndrome</li>
-              <li>Chronic Pelvic Pain (women)</li>
-              <li>Constipation</li>
-              <li>Coccyx pain</li>
-              <li>Vaginissmus</li>
-              <li>Clitoral pain</li>
-              <li>Sacral pain</li>
-              <li>Anal/rectal pain</li>
-              <li>Pain with sex</li>
-              <li>Fertility problems due to scar tissue</li>
-              <li>Post surgical care for any pelvic or abdominal surgery</li>
-              <li>Anorgasmia</li>
-              <li>Recurrent UTI’s</li>
-            </ul>
-          </div>
+        </div>
+
+        <div>
+          <h2>Common conditions treated:</h2>
+          <ul>
+            <li>Vulvodynia/Vestibulodynia</li>
+            <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
+            <li>Pudendal Neuralgia</li>
+            <li>Endometriosis</li>
+            <li>Urgency/ Frequent Urination</li>
+            <li>Urinary/ Fecal Incontinence</li>
+            <li>Abdominal pain syndrome</li>
+            <li>Chronic Pelvic Pain (women)</li>
+            <li>Constipation</li>
+            <li>Coccyx pain</li>
+            <li>Vaginissmus</li>
+            <li>Clitoral pain</li>
+            <li>Sacral pain</li>
+            <li>Anal/rectal pain</li>
+            <li>Pain with sex</li>
+            <li>Fertility problems due to scar tissue</li>
+            <li>Post surgical care for any pelvic or abdominal surgery</li>
+            <li>Anorgasmia</li>
+            <li>Recurrent UTI’s</li>
+          </ul>
         </div>
       </div>
-      <div className="services" id="male">
-        <h1>Male Pelvic Health</h1>
+      <div className="service" id="male">
+        <div>
+          <h1>Male Pelvic Health</h1>
+          <p>
+            Our specialized Pelvic Floor Physical Therapists also treat
+            conditions that are specific to the health of male urological and
+            sexual function. For men, fascial restrictions in the pelvic floor
+            and pelvic girdle can cause sexual dysfunction, difficulty with
+            urination and bowel movements, or pelvic pain. Fascial restrictions
+            in the male pelvis are often caused by poor postural alignment or
+            scarring from abdominal or pelvic surgeries. Our Pelvic Floor
+            Physical Therapists will help to reduce adhered scar tissue
+            restrictions, and will also help to improve flexibility and
+            normalize function to the urinary and reproductive systems.
+          </p>
+        </div>
 
-        <p
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "50%",
-            margin: "auto",
-            fontSize: "24px",
-          }}
-        >
-          Our specialized Pelvic Floor Physical Therapists also treat conditions
-          that are specific to the health of male urological and sexual
-          function. For men, fascial restrictions in the pelvic floor and pelvic
-          girdle can cause sexual dysfunction, difficulty with urination and
-          bowel movements, or pelvic pain. Fascial restrictions in the male
-          pelvis are often caused by poor postural alignment or scarring from
-          abdominal or pelvic surgeries. Our Pelvic Floor Physical Therapists
-          will help to reduce adhered scar tissue restrictions, and will also
-          help to improve flexibility and normalize function to the urinary and
-          reproductive systems.
-        </p>
         <div className="male">
           <ul>
             <h2>Common Conditions Treated:</h2>
@@ -150,29 +147,22 @@ function Services(props) {
           </ul>
         </div>
       </div>
-      <div className="services" id="male">
-        <h1>Chronic Pain</h1>
-
-        <p
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "50%",
-            margin: "auto",
-          }}
-        >
-          Our specialized Pelvic Floor Physical Therapists also treat conditions
-          that are specific to the health of male urological and sexual
-          function. For men, fascial restrictions in the pelvic floor and pelvic
-          girdle can cause sexual dysfunction, difficulty with urination and
-          bowel movements, or pelvic pain. Fascial restrictions in the male
-          pelvis are often caused by poor postural alignment or scarring from
-          abdominal or pelvic surgeries. Our Pelvic Floor Physical Therapists
-          will help to reduce adhered scar tissue restrictions, and will also
-          help to improve flexibility and normalize function to the urinary and
-          reproductive systems.
-        </p>
-        <div className="male">
+      <div className="service" id="chron">
+        <div>
+          <h1>Chronic Pain</h1>
+          <p>
+            Chronic pain, like neck or back pain, can be caused by poor posture,
+            accidents, falls, emotional trauma, surgeries and disease. It can
+            significantly impact a person’s life and function and can be
+            crippling to the mind, body and spirit. This is why it is extremely
+            important to address these conditions holistically. At Mariposa
+            Wellness we use integrative manual therapy techniques including Core
+            Synchronism, Visceral Manipulation, and Myofascial Release to
+            effectively treat persistent pain, release blocked emotional tension
+            and improve postural and functionality in the body.
+          </p>
+        </div>
+        <div>
           <ul>
             <h2>Common Conditions Treated:</h2>
             <li>Carpal Tunnel Syndrome</li>
@@ -193,23 +183,18 @@ function Services(props) {
           </ul>
         </div>
       </div>
-
-      <div className="services" id="ed">
-        <h1>
-          Community <br />
-          Education Classes
-        </h1>
-        <p
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "50%",
-            margin: "auto",
-          }}
-        >
-          If you are interested in having a physical therapist come out and talk
-          with your new parents group please email admin@mariposawellnessllc.com
-        </p>
+      <div className="service" id="ed">
+        <div>
+          <h1>
+            Community <br />
+            Education Classes
+          </h1>
+          <p>
+            If you are interested in having a physical therapist come out and
+            talk with your new parents group please email
+            admin@mariposawellnessllc.com
+          </p>
+        </div>
         <div className="male">
           <ul>
             <h2>Class topics include:</h2>

@@ -1,86 +1,11 @@
-.services {
-  /* height: 1000px; */
-  scroll-snap-align: start;
-  text-align: center;
-  height: 100vh;
-  overflow: scroll;
-  margin-bottom: 20%;
+@media only screen and (max-width: 550px) {
+  .big-containter {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
-.big-container {
-  scroll-snap-type: y mandatory;
-}
-
-.content {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+.service {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-image: url("../assets/services/bfeed.jpg");
-  color: white;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-.title {
-  margin-left: 20px;
-  text-align: left;
-}
-
-li {
-  color: white;
-  font-size: 24px;
-  text-align: left;
-}
-
-.content2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* background-image: url("../assets/services/bfeed.jpg"); */
-  color: white;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-.male {
-  display: flex;
-  justify-content: center;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-.chronlist {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-.content3 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-image: url("../assets/services/laugh.jpg");
-  color: white;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-.fem {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 80%;
-  font-size: 20px;
-}
-
-#pre-post {
-}
-
-.gender-quote {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: whitesmoke;
-  text-shadow: none;
-  width: 75%;
-  font-size: 28px;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  grid-template-columns: 1fr 1fr;
 }

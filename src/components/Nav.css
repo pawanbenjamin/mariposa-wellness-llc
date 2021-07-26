@@ -40,3 +40,8 @@
   padding: 10px;
   height: 80px;
 }
+
+.anchor {
+  text-decoration: none;
+  color: black;
+}
