@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { ReactComponent as Logo } from "../../assets/mari-logo.svg";
+import { ReactComponent as Logo } from "../assets/mari-logo.svg";
 
 import $ from "jquery";
 
 import "./Home.css";
 
-import logo from "../../assets/logo.svg";
-import purple from "../../assets/Purple.png";
+import logo from "../assets/logo.svg";
+import purple from "../assets/Purple.png";
 
-import one from "../../assets/ban-imgs/one.jpg";
-import two from "../../assets/ban-imgs/two.jpg";
-import three from "../../assets/ban-imgs/three.jpg";
-import four from "../../assets/ban-imgs/four.jpg";
-import five from "../../assets/ban-imgs/five.jpg";
-import six from "../../assets/ban-imgs/six.jpg";
-import seven from "../../assets/ban-imgs/seven.jpg";
-import eight from "../../assets/ban-imgs/eight.jpg";
+import one from "../assets/ban-imgs/one.jpg";
+import two from "../assets/ban-imgs/two.jpg";
+import three from "../assets/ban-imgs/three.jpg";
+import four from "../assets/ban-imgs/four.jpg";
+import five from "../assets/ban-imgs/five.jpg";
+import six from "../assets/ban-imgs/six.jpg";
+import seven from "../assets/ban-imgs/seven.jpg";
+import eight from "../assets/ban-imgs/eight.jpg";
 
-import bio1 from "../../assets/bio-pics/one.jpg";
+import bio1 from "../assets/bio-pics/one.jpg";
 
 let slideImages = [one, two, three, four, five, six, seven, eight];
 

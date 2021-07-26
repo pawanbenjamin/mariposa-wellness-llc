@@ -4,7 +4,7 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Home from "./components/Home/index";
+import Home from "./components/Home";
 import About from "./components/About";
 import Treatments from "./components/Treatments";
 import Services from "./components/Services";
