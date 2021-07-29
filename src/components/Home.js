@@ -45,27 +45,23 @@ function Home(props) {
           backgroundImage: `url(${slideImages[index]})`,
         }}
       >
-        <div className="left-side">
-          <h1
-            style={{
-              marginLeft: "5%",
-              textAlign: "center",
-            }}
-          >
-            Welcome to <br />
-            Mariposa Wellness
-          </h1>
-          <div className="button-cont">
-            <a href="https://bchwbooking.clientsecure.me/">
-              <button className="book">Book an Appointment</button>
-            </a>
-          </div>
-          {/* <div className="logo">
-            <img src={logo} />
-          </div> */}
+        <h1
+          style={{
+            marginLeft: "5%",
+            textAlign: "center",
+          }}
+        >
+          Welcome to <br />
+          Mariposa Wellness
+        </h1>
+        <div className="button-cont">
+          <a href="https://bchwbooking.clientsecure.me/">
+            <button className="book">New Patients</button>
+          </a>
+          <a href="https://bchwbooking.clientsecure.me/">
+            <button className="book">Book an Appointment</button>
+          </a>
         </div>
-
-        {/* <div className="filler"></div> */}
       </section>
       <div className="logo">
         <img src={purple} />
