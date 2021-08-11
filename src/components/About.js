@@ -13,6 +13,7 @@ function About(props) {
     <>
       <div className="head-cont">
         <h1>About Marisa</h1>
+        <span>(She/Ella)</span>
       </div>
 
       <div className="container">
