@@ -14,8 +14,12 @@
       "content"
       "content";
   }
+
+  .treatment h1 {
+    font-size: 70px;
+  }
   .image-cont {
-    margin: 0;
+    margin-top: 0;
   }
 
   .text-block {
@@ -29,7 +33,7 @@ img {
 }
 
 .image-cont {
-  margin-top: 50px;
+  margin: auto;
 }
 
 .title {
