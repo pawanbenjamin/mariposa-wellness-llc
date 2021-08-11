@@ -30,7 +30,7 @@ function Treatments(props) {
         </div>
       </div>
       <div className="treatment" id="visc">
-        <div className="image-cont">
+        <div className="image-cont" style={{ marginTop: "40px" }}>
           <img src={stom2} width="500px" />
         </div>
         <div className="info2">
@@ -45,7 +45,7 @@ function Treatments(props) {
             painful periods, musculoskeletal pain, infertility and more.
             <br />
             <a href="https://www.barralinstitute.com/therapies/index.php">
-              https://www.barralinstitute.com/therapies/index.php
+              Barral Institue Therapy Info
             </a>
           </p>
         </div>
@@ -73,7 +73,7 @@ function Treatments(props) {
             persistent back pain, sciatica, and hip pain.
           </p>
         </div>
-        <div className="image-cont">
+        <div className="image-cont" id="friend">
           <img src={pelv} width="100%" />
         </div>
       </div>

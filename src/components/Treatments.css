@@ -18,12 +18,16 @@
   .treatment h1 {
     font-size: 70px;
   }
-  .image-cont {
+  /* .image-cont {
     margin-top: 0;
-  }
+  } */
 
   .text-block {
     margin: auto;
+  }
+
+  #friend {
+    margin-top: 40px;
   }
 }
 
