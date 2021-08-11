@@ -10,6 +10,11 @@
   transition: background 1.5s linear;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -39,8 +44,8 @@
   margin-right: 15%;
   margin-bottom: 10%;
   font-size: 24px;
-  color: white;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
 }
 
 button {

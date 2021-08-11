@@ -5,13 +5,39 @@
   grid-template-areas: "content content2";
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1080px) {
   .treatment {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr;
     grid-template-areas:
       "title"
       "content"
       "content";
   }
+  .image-cont {
+    margin: 0;
+  }
+
+  .text-block {
+    margin: auto;
+  }
+}
+
+img {
+  max-height: 400px;
+  width: auto;
+}
+
+.image-cont {
+  margin-top: 50px;
+}
+
+.title {
+  margin-left: 10%;
+}
+
+.text-block {
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
 }

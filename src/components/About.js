@@ -11,22 +11,10 @@ import aqua from "../assets/turq.svg";
 function About(props) {
   return (
     <>
-      <h1
-        style={{
-          marginLeft: "20px",
-          scrollSnapAlign: "start",
-        }}
-        className="header"
-      >
-        About Mari
-        <span
-          style={{
-            fontSize: "40px",
-          }}
-        >
-          (she/ella)
-        </span>
-      </h1>
+      <div className="head-cont">
+        <h1>About Marisa</h1>
+      </div>
+
       <div className="container">
         <div className="image-cont">
           <img className="mari-karuna" src={one} width="400px" />
@@ -71,9 +59,14 @@ function About(props) {
         </div>
 
         <div className="image-cont">
-          <img src={four} width="400px" style={{
-            clipPath: 'polygon(75% 0, 100% 28%, 100% 100%, 29% 100%, 0 68%, 0% 0%)'
-          }}/>
+          <img
+            src={four}
+            width="400px"
+            style={{
+              clipPath:
+                "polygon(75% 0, 100% 28%, 100% 100%, 29% 100%, 0 68%, 0% 0%)",
+            }}
+          />
         </div>
 
         <p className="bio1">
@@ -102,7 +95,7 @@ function About(props) {
             full body integrative healing. When I am not treating, I love
             spending time with my family and friends, being in nature, exploring
             the world, eating delicious food, dancing and listening to live
-            music. PHOTOS
+            music.
           </p>
         </div>
       </div>

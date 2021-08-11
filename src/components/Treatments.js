@@ -25,16 +25,18 @@ function Treatments(props) {
             </a>
           </p>
         </div>
-        <div>
-          <img src={three} width="600px" />
+        <div className="image-cont">
+          <img src={three} />
         </div>
       </div>
       <div className="treatment" id="visc">
-        <div>
+        <div className="image-cont">
           <img src={stom2} width="500px" />
         </div>
         <div className="info2">
-          <h1>Visceral Manipulation</h1>
+          <div className="title">
+            <h1>Visceral Manipulation</h1>
+          </div>
           <p className="text-block">
             Visceral Manipulation uses an in depth understanding of the anatomy
             in order to address fascial restrictions around the organ systems.
@@ -50,10 +52,12 @@ function Treatments(props) {
       </div>
       <div className="treatment" id="pelvic">
         <div>
-          <h1>
-            Pelvic Floor <br />
-            Physical Therapy
-          </h1>
+          <div className="title">
+            <h1>
+              Pelvic Floor <br />
+              Physical Therapy
+            </h1>
+          </div>
           <p className="text-block">
             Pelvic floor physical therapy address the whole body with a deeper
             understanding of the pelvic floor muscles, nerves, organs, and
@@ -69,8 +73,9 @@ function Treatments(props) {
             persistent back pain, sciatica, and hip pain.
           </p>
         </div>
-
-        <img src={pelv} width="100%" />
+        <div className="image-cont">
+          <img src={pelv} width="100%" />
+        </div>
       </div>
     </div>
   );
