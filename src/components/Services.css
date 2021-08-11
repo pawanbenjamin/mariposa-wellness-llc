@@ -1,11 +1,30 @@
-@media only screen and (max-width: 550px) {
-  .big-containter {
+@media only screen and (min-width: 800px) {
+  .service {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+.common-cond {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.title-desc {
+  margin: 30px;
+}
+
+.fem {
+  font-size: 20px;
+}
+
 .service {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }

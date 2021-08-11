@@ -1,11 +1,14 @@
 import React from "react";
 import "./Services.css";
 
+import bfeed from "../assets/services/bfeed.jpg";
+import gender from "../assets/services/gender.jpg";
+
 function Services(props) {
   return (
     <div className="big-container">
       <div className="service" id="pre-post">
-        <div>
+        <div className="title-desc">
           <h1>
             Prenatal / <br />
             Postpartum
@@ -21,34 +24,38 @@ function Services(props) {
           </p>
         </div>
         <div>
-          <h2>Common conditions treated:</h2>
-          <ul>
-            <li>Pregnancy related Back/ Hip Pain</li>
-            <li>Post-Partum urinary/ fecal incontinence</li>
-            <li>Diastasis Recti</li>
-            <li>Pelvic Organ Prolapse</li>
-            <li>C-Section Scar Treatment</li>
-            <li>Postural pain due to wearing, carrying, nursing baby</li>
-            <li>Symphysis pubis dysfunction (SPD)</li>
-            <li>Sexual Dysfunction</li>
-            <li>Sacro-iliac joint dysfunction</li>
-            <li>Pelvic instability</li>
-          </ul>
+          <img src={bfeed} />
+          <div className="common-cond">
+            <h2>Common conditions treated:</h2>
+            <ul>
+              <li>Pregnancy related Back/ Hip Pain</li>
+              <li>Post-Partum urinary/ fecal incontinence</li>
+              <li>Diastasis Recti</li>
+              <li>Pelvic Organ Prolapse</li>
+              <li>C-Section Scar Treatment</li>
+              <li>Postural pain due to wearing, carrying, nursing baby</li>
+              <li>Symphysis pubis dysfunction (SPD)</li>
+              <li>Sexual Dysfunction</li>
+              <li>Sacro-iliac joint dysfunction</li>
+              <li>Pelvic instability</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="service" id="gender">
-        <div>
+        <div className="title-desc">
           <h1>
             Gender Inclusive
             <br /> Pelvic Health
           </h1>
-          <p className="gender-quote">
+          <p className="fem">
             At Mariposa wellness we are dedicated to inclusive rehabilitation
             for patients across the gender spectrum.
           </p>
         </div>
         <div className="content2">
-          <div>
+          <img src={gender} />
+          <div className="common-cond">
             <h2>Common conditions treated:</h2>
             <ul>
               <li>Tissue preparation Pre-Gender affirming surgery</li>
@@ -69,7 +76,7 @@ function Services(props) {
         </div>
       </div>
       <div className="service" id="female">
-        <div>
+        <div className="title-desc">
           <h1>Female Pelvic Health</h1>
           <p className="fem">
             At Mariposa Wellness we specialize in the treatment of the following
@@ -83,7 +90,7 @@ function Services(props) {
           </p>
         </div>
 
-        <div>
+        <div className="common-cond">
           <h2>Common conditions treated:</h2>
           <ul>
             <li>Vulvodynia/Vestibulodynia</li>
@@ -109,9 +116,9 @@ function Services(props) {
         </div>
       </div>
       <div className="service" id="male">
-        <div>
+        <div className="title-desc">
           <h1>Male Pelvic Health</h1>
-          <p>
+          <p className="fem">
             Our specialized Pelvic Floor Physical Therapists also treat
             conditions that are specific to the health of male urological and
             sexual function. For men, fascial restrictions in the pelvic floor
@@ -125,7 +132,7 @@ function Services(props) {
           </p>
         </div>
 
-        <div className="male">
+        <div className="common-cond">
           <ul>
             <h2>Common Conditions Treated:</h2>
             <li>Chronic Pelvic Pain Syndrome/male pelvic pain</li>
@@ -148,9 +155,9 @@ function Services(props) {
         </div>
       </div>
       <div className="service" id="chron">
-        <div>
+        <div className="title-desc">
           <h1>Chronic Pain</h1>
-          <p>
+          <p className="fem">
             Chronic pain, like neck or back pain, can be caused by poor posture,
             accidents, falls, emotional trauma, surgeries and disease. It can
             significantly impact a person’s life and function and can be
@@ -162,7 +169,7 @@ function Services(props) {
             and improve postural and functionality in the body.
           </p>
         </div>
-        <div>
+        <div className="common-cond">
           <ul>
             <h2>Common Conditions Treated:</h2>
             <li>Carpal Tunnel Syndrome</li>
@@ -184,18 +191,18 @@ function Services(props) {
         </div>
       </div>
       <div className="service" id="ed">
-        <div>
+        <div className="title-desc">
           <h1>
             Community <br />
             Education Classes
           </h1>
-          <p>
+          <p className="fem">
             If you are interested in having a physical therapist come out and
             talk with your new parents group please email
             admin@mariposawellnessllc.com
           </p>
         </div>
-        <div className="male">
+        <div className="common-cond">
           <ul>
             <h2>Class topics include:</h2>
             <li>How to care for the pregnant body</li>

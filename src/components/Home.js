@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../assets/mari-logo.svg";
 
 import $ from "jquery";
@@ -55,9 +56,10 @@ function Home(props) {
           Mariposa Wellness
         </h1>
         <div className="button-cont">
-          <a href="https://bchwbooking.clientsecure.me/">
+          <Link to="/contact">
             <button className="book">New Patients</button>
-          </a>
+          </Link>
+
           <a href="https://bchwbooking.clientsecure.me/">
             <button className="book">Book an Appointment</button>
           </a>
