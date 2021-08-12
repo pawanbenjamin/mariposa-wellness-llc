@@ -1,3 +1,9 @@
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .container {
+    background-color: red;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,26 +13,36 @@
 .image-cont {
   display: flex;
   justify-content: center;
+  height: 400px;
+}
+
+.image-cont > img {
+  max-height: 100%;
+  max-width: auto;
+}
+
+.image-cont-3 {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.image-cont-3 > img {
+  max-height: 100%;
+  max-width: auto;
 }
 
 .image-cont-2 {
+  height: 400px;
   display: flex;
   justify-content: center;
 }
 
 .image-cont-4 {
+  height: 400px;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
-  /* clip-path: polygon(
-    71% 0,
-    94% 22%,
-    100% 60%,
-    85% 100%,
-    25% 100%,
-    0 61%,
-    36% 0
-  ); */
 }
 
 .header {
@@ -90,7 +106,6 @@ span {
 }
 
 .final {
-  display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 30px;

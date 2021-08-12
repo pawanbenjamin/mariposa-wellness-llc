@@ -25,12 +25,12 @@ function Treatments(props) {
             </a>
           </p>
         </div>
-        <div className="image-cont">
+        <div className="t-image-cont">
           <img src={three} />
         </div>
       </div>
       <div className="treatment" id="visc">
-        <div className="image-cont" style={{ marginTop: "40px" }}>
+        <div className="t-image-cont" style={{ marginTop: "40px" }}>
           <img src={stom2} width="500px" />
         </div>
         <div className="info2">
@@ -73,7 +73,7 @@ function Treatments(props) {
             persistent back pain, sciatica, and hip pain.
           </p>
         </div>
-        <div className="image-cont" id="friend">
+        <div className="t-image-cont" id="friend">
           <img src={pelv} width="100%" />
         </div>
       </div>

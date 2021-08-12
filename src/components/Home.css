@@ -10,7 +10,7 @@
   transition: background 1.5s linear;
 }
 
-img {
+.hero-block > img {
   max-width: 100%;
   height: auto;
 }

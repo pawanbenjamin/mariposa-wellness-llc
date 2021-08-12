@@ -10,7 +10,7 @@ import aqua from "../assets/turq.svg";
 
 function About(props) {
   return (
-    <>
+    <div className="about">
       <div className="head-cont">
         <h1>About Marisa</h1>
         <span>(She/Ella)</span>
@@ -18,7 +18,7 @@ function About(props) {
 
       <div className="container">
         <div className="image-cont">
-          <img className="mari-karuna" src={one} width="400px" />
+          <img src={one} />
         </div>
         <div className="bio1">
           <p>
@@ -59,10 +59,9 @@ function About(props) {
           </p>
         </div>
 
-        <div className="image-cont">
+        <div className="image-cont-3">
           <img
             src={four}
-            width="400px"
             style={{
               clipPath:
                 "polygon(75% 0, 100% 28%, 100% 100%, 29% 100%, 0 68%, 0% 0%)",
@@ -86,7 +85,7 @@ function About(props) {
         </p>
         <div className="final">
           <div className="image-cont-4">
-            <img src={two} width="300px" />
+            <img src={two} />
           </div>
           <p className="bio1">
             After 8 years, 3 kids (between my business partner and myself),
@@ -100,7 +99,7 @@ function About(props) {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

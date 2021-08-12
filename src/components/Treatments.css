@@ -8,7 +8,7 @@
 @media only screen and (max-width: 1080px) {
   .treatment {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
+
     grid-template-areas:
       "title"
       "content"
@@ -16,7 +16,7 @@
   }
 
   .treatment h1 {
-    font-size: 70px;
+    margin-left: 5%;
   }
   /* .image-cont {
     margin-top: 0;
@@ -26,17 +26,18 @@
     margin: auto;
   }
 
+  .text-block {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   #friend {
     margin-top: 40px;
   }
 }
 
-img {
-  max-height: 400px;
-  width: auto;
-}
-
-.image-cont {
+.t-image-cont {
   margin: auto;
 }
 
@@ -46,6 +47,6 @@ img {
 
 .text-block {
   font-size: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
