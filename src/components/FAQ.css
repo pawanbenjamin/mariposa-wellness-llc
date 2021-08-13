@@ -1,10 +1,16 @@
-.FAQ p {
-  color: black;
-  margin-right: 20%;
-  margin-left: 20%;
-  /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
+.topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.FAQ h1 {
-  margin-left: 20px;
+.topic > h1 {
+  font-size: 50px;
+}
+
+.topic > p {
+  text-align: center;
+  font-size: 20px;
 }

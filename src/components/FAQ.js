@@ -5,7 +5,7 @@ import "./FAQ.css";
 function FAQ(props) {
   return (
     <div className="FAQ">
-      <div>
+      <div className="topic">
         <h1>Insurance</h1>
         <p>
           Mariposa Wellness is an out-of-network outpatient physical therapy
@@ -17,7 +17,7 @@ function FAQ(props) {
           “outpatient physical therapy.”
         </p>
       </div>
-      <div>
+      <div className="topic">
         <h1>Fees</h1>
         <p>
           Initial Evaluation: $230 60 min follow-up appointment: $195
@@ -29,7 +29,7 @@ function FAQ(props) {
           interested this option please email admin@mariposawellnessllc.com
         </p>
       </div>
-      <div>
+      <div className="topic">
         <h1>Cancellation Policy</h1>
         <p>
           Cancellations must be received with in 48hrs of the scheduled
@@ -37,7 +37,7 @@ function FAQ(props) {
           received later than 48hrs.{" "}
         </p>
       </div>
-      <div>
+      <div className="topic">
         <h1>Medicare</h1>
         <p>
           Medicare - Mariposa Wellness is not a participating provider with
