@@ -31,7 +31,7 @@ function Treatments(props) {
       </div>
       <div className="treatment" id="visc">
         <div className="t-image-cont" style={{ marginTop: "40px" }}>
-          <img src={stom2} width="500px" />
+          <img src={stom2} />
         </div>
         <div className="info2">
           <div className="title">
@@ -74,7 +74,7 @@ function Treatments(props) {
           </p>
         </div>
         <div className="t-image-cont" id="friend">
-          <img src={pelv} width="100%" />
+          <img src={pelv} />
         </div>
       </div>
     </div>

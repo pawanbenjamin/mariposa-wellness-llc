@@ -27,6 +27,7 @@
   }
 
   .text-block {
+    text-align: center;
     font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
@@ -39,6 +40,10 @@
 
 .t-image-cont {
   margin: auto;
+}
+
+.t-image-cont img {
+  max-height: 350px;
 }
 
 .title {
