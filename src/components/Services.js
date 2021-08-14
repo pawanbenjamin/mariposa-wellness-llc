@@ -10,7 +10,7 @@ function Services(props) {
       <div className="service" id="pre-post">
         <div className="title-desc">
           <h1>
-            Prenatal / <br />
+            Prenatal &<br />
             Postpartum
           </h1>
           <p className="fem">
