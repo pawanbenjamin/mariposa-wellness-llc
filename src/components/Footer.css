@@ -2,3 +2,8 @@
   /* scroll-snap-align: start; */
   background-color: transparent;
 }
+
+.footer span {
+  color: purple;
+  text-shadow: none;
+}

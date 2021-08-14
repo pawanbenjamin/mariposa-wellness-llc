@@ -18,13 +18,6 @@
   .treatment h1 {
     margin-left: 5%;
   }
-  /* .image-cont {
-    margin-top: 0;
-  } */
-
-  .text-block {
-    margin: auto;
-  }
 
   .text-block {
     text-align: center;
@@ -51,6 +44,7 @@
 }
 
 .text-block {
+  text-align: center;
   font-size: 20px;
   margin-left: 15%;
   margin-right: 15%;

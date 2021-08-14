@@ -21,6 +21,10 @@
   margin-top: 5%;
 }
 
+.big-container li {
+  font-size: 20px;
+}
+
 .common-cond {
   display: flex;
   flex-direction: column;
@@ -29,7 +33,7 @@
 }
 
 .title-desc {
-  margin: 30px;
+  margin: 10%;
 }
 
 .fem {
@@ -37,4 +41,20 @@
 }
 
 .service {
+}
+
+.bfeed img {
+  max-width: 100%;
+}
+
+.bfeed {
+  margin: auto;
+}
+
+.gender img {
+  max-width: 100%;
+}
+
+.content2 {
+  margin: auto;
 }

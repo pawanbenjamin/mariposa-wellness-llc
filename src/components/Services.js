@@ -24,7 +24,9 @@ function Services(props) {
           </p>
         </div>
         <div>
-          <img src={bfeed} />
+          <div className="bfeed">
+            <img src={bfeed} />
+          </div>
           <div className="common-cond">
             <h2>Common conditions treated:</h2>
             <ul>
@@ -54,7 +56,9 @@ function Services(props) {
           </p>
         </div>
         <div className="content2">
-          <img src={gender} />
+          {/* <div className="gender">
+            <img src={gender} />
+          </div> */}
           <div className="common-cond">
             <h2>Common conditions treated:</h2>
             <ul>
