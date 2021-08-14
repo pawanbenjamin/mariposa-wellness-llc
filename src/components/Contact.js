@@ -7,6 +7,26 @@ import Button from "@material-ui/core/Button";
 import "./Contact.css";
 
 function Contact(props) {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_5mfcpp8",
+        e.target,
+        "user_PLmAZyBbB7QDAYuit7CiQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <h1 className="header">Contact</h1>
@@ -20,7 +40,7 @@ function Contact(props) {
           </h2>
         </div>
 
-        <form className="form-cont">
+        <form className="form-cont" onSubmit={sendEmail}>
           <TextField name="name" type="text" placeholder="Name" />
           <TextField name="email" type="text" placeholder="Email" />
           <TextField name="subject" type="text" placeholder="Subject" />
