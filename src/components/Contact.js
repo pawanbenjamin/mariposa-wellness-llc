@@ -1,6 +1,10 @@
 import React from "react";
 
 import emailjs from "emailjs-com";
+
+import { init } from "emailjs-com";
+init("user_PLmAZyBbB7QDAYuit7CiQ");
+
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
@@ -12,7 +16,7 @@ function Contact(props) {
 
     emailjs
       .sendForm(
-        "gmail",
+        "service_ar83r8q",
         "template_5mfcpp8",
         e.target,
         "user_PLmAZyBbB7QDAYuit7CiQ"
