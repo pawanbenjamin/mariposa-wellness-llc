@@ -54,7 +54,9 @@ function Contact(props) {
             placeholder="Message"
             multiline
           />
-          <Button type="submit">Submit</Button>
+          <button className="book" size="small" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </>

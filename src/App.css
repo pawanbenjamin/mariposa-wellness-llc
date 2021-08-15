@@ -15,3 +15,7 @@ h4:hover {
 h1 {
   text-shadow: 2px 2px 2px purple;
 }
+
+img {
+  border-radius: 10px;
+}
