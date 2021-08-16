@@ -21,6 +21,14 @@
   justify-content: center;
 } */
 
+@media only screen and (device-width: 768px) {
+  .image-cont {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .image-cont {
     display: flex;
