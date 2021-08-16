@@ -3,7 +3,9 @@ import React from "react";
 import emailjs from "emailjs-com";
 
 import { init } from "emailjs-com";
-init("user_PLmAZyBbB7QDAYuit7CiQ");
+import { service, template, user } from "../secrets";
+
+init(user);
 
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
@@ -14,21 +16,14 @@ function Contact(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_ar83r8q",
-        "template_5mfcpp8",
-        e.target,
-        "user_PLmAZyBbB7QDAYuit7CiQ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(service, template, e.target, user).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
