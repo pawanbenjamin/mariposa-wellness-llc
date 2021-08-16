@@ -4,6 +4,10 @@
   filter: drop-shadow(0 0 0.25rem rgb(44, 42, 43));
 } */
 
+/* .menu-item:hover {
+  color: gold;
+} */
+
 .menu-icon {
   margin-top: 24px;
   margin-right: 15px;
@@ -43,5 +47,5 @@
 
 .anchor {
   text-decoration: none;
-  color: black;
+  color: #4a1c3e;
 }
