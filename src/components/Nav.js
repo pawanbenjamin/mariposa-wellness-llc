@@ -3,12 +3,22 @@ import { Link } from "react-router-dom";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/styles";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import { Hidden } from "@material-ui/core";
 
-import Logo from "../assets/mari-logo.svg";
+import bkg from "../assets/binding-light.png";
 
 import "./Nav.css";
+
+const useStyles = makeStyles(() => ({
+  menu: {
+    backgroundColor: "#A5D7DF",
+    color: "#4A1C3E",
+    backgroundImage: `url(${bkg})`,
+    borderRadius: "5px",
+  },
+}));
 
 const stylesObj = {
   display: "flex",
@@ -60,6 +70,8 @@ function Nav(props) {
     setOpenMenu(false);
   };
 
+  const classes = useStyles();
+
   return (
     <div className="stylesObj">
       {/* <img src={Logo} className="logo" /> */}
@@ -95,19 +107,16 @@ function Nav(props) {
             // classes={{ paper: classes.menu }}
             MenuListProps={{ onMouseLeave: handleCloseServ }}
             elevation={0}
+            classes={{ paper: classes.menu }}
             style={{ zIndex: 1302 }}
           >
+            <MenuItem className="menu-item">Services</MenuItem>
             <a
               className="anchor"
               onClick="return false;"
               href="/services#pre-post"
             >
-              <MenuItem
-                className="menu-item"
-                // component={Link}
-                // to="/services#pre-post"
-                onClick={handleClose}
-              >
+              <MenuItem className="menu-item" onClick={handleClose}>
                 Prenatal / Postpartum
               </MenuItem>
             </a>
@@ -117,12 +126,7 @@ function Nav(props) {
               onClick="return false;"
               href="/services#gender"
             >
-              <MenuItem
-                className="menu-item"
-                // component={Link}
-                // to="/services#gender"
-                onClick={handleClose}
-              >
+              <MenuItem className="menu-item" onClick={handleClose}>
                 Gender Inclusive Pelvic Health
               </MenuItem>
             </a>
@@ -131,22 +135,12 @@ function Nav(props) {
               onClick="return false;"
               href="/services#female"
             >
-              <MenuItem
-                className="menu-item"
-                // component={Link}
-                // to="/"
-                onClick={handleClose}
-              >
+              <MenuItem className="menu-item" onClick={handleClose}>
                 Female Pelvic Health
               </MenuItem>
             </a>
             <a className="anchor" onClick="return false;" href="/services#male">
-              <MenuItem
-                className="menu-item"
-                // component={Link}
-                // to="/"
-                onClick={handleClose}
-              >
+              <MenuItem className="menu-item" onClick={handleClose}>
                 Male Pelvic Health
               </MenuItem>
             </a>
@@ -155,12 +149,7 @@ function Nav(props) {
               onClick="return false;"
               href="/services#chron"
             >
-              <MenuItem
-                className="menu-item"
-                // component={Link}
-                // to="/"
-                onClick={handleClose}
-              >
+              <MenuItem className="menu-item" onClick={handleClose}>
                 Chronic Pain
               </MenuItem>
             </a>
@@ -175,6 +164,7 @@ function Nav(props) {
               </MenuItem>
             </a>
           </Menu>
+
           <Link className="linkStyle" to="/FAQ">
             <h4>FAQ</h4>
           </Link>
@@ -200,31 +190,23 @@ function Nav(props) {
             Open Menu
           </MenuRoundedIcon>
           <Menu
-            style={{
-              "& .MuiPaper-root": {
-                backgroundColor: "lightblue",
-              },
-            }}
             id="simple-menu"
             anchorEl={anchorEl}
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClose}
+            classes={{ paper: classes.menu }}
           >
             <MenuItem
-              style={{
-                color: "black",
-              }}
               component={Link}
               to="/"
+              style={{ color: "#4A1C3E" }}
               onClick={handleClose}
             >
               Home
             </MenuItem>
             <MenuItem
-              style={{
-                color: "black",
-              }}
+              style={{ color: "#4A1C3E" }}
               component={Link}
               to="/about"
               onClick={handleClose}
@@ -232,9 +214,7 @@ function Nav(props) {
               About
             </MenuItem>
             <MenuItem
-              style={{
-                color: "black",
-              }}
+              style={{ color: "#4A1C3E" }}
               component={Link}
               to="/treatments"
               onClick={handleClose}
@@ -242,9 +222,7 @@ function Nav(props) {
               Treatments
             </MenuItem>
             <MenuItem
-              style={{
-                color: "black",
-              }}
+              style={{ color: "#4A1C3E" }}
               component={Link}
               to="/services"
               onClick={handleClose}
@@ -252,9 +230,7 @@ function Nav(props) {
               Services
             </MenuItem>
             <MenuItem
-              style={{
-                color: "black",
-              }}
+              style={{ color: "#4A1C3E" }}
               component={Link}
               to="/FAQ"
               onClick={handleClose}
@@ -262,9 +238,7 @@ function Nav(props) {
               FAQ
             </MenuItem>
             <MenuItem
-              style={{
-                color: "black",
-              }}
+              style={{ color: "#4A1C3E" }}
               component={Link}
               to="/contact"
               onClick={handleClose}

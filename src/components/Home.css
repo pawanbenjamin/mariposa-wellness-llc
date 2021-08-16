@@ -2,12 +2,13 @@
   /* scroll-snap-align: start; */
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   transition: background 1.5s linear;
+  margin: auto;
 }
 
 .hero-block > img {
@@ -149,6 +150,5 @@ li {
   }
 
   .text {
-    margin-top: 3%;
   }
 }
