@@ -15,21 +15,7 @@
   }
 }
 
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 @media only screen and (device-width: 768px) {
-  .image-cont {
-    display: flex;
-    justify-content: center;
-    height: 400px;
-  }
-}
-
-@media only screen and (min-width: 800px) {
   .image-cont {
     display: flex;
     justify-content: center;
@@ -43,10 +29,18 @@
   }
 
   .image-cont-4 {
-    height: 400px;
     display: flex;
     justify-content: center;
+    height: 400px;
     margin-bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .image-cont {
+    display: flex;
+    justify-content: center;
+    height: 400px;
   }
 }
 
@@ -80,6 +74,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+}
+
+.image-cont-4 > img {
+  max-height: 100%;
+  max-width: auto;
 }
 
 .header {
