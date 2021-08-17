@@ -60,9 +60,9 @@
   margin-left: 20%;
   margin-right: 20%;
 
-  font-size: 30px;
-  color: rgb(250, 248, 248);
-  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  font-size: 40px;
+  color: rgb(252, 251, 233);
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
 button {
@@ -86,7 +86,7 @@ h1 {
 @media screen and (max-width: 800px) {
   .text {
     margin-top: 8%;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 0px;
   }
@@ -150,5 +150,6 @@ li {
   }
 
   .text {
+    font-size: 30;
   }
 }

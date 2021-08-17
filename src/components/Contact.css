@@ -42,3 +42,23 @@
   margin-right: 10%;
   margin-left: 10%;
 }
+
+.book2 {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  /* border-radius: 50px; */
+  /* box-shadow: 0 6px #dab94e; */
+  font-family: "DM Serif Display";
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  background: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  /* position: relative; */
+}

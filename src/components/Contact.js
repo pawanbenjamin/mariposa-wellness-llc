@@ -49,7 +49,7 @@ function Contact(props) {
             placeholder="Message"
             multiline
           />
-          <button className="book" size="small" type="submit">
+          <button className="book2" size="small" type="submit">
             Submit
           </button>
         </form>

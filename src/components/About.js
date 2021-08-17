@@ -6,7 +6,7 @@ import two from "../assets/bio-pics/two.jpg";
 import three from "../assets/bio-pics/three.jpg";
 import four from "../assets/bio-pics/four.jpg";
 
-import aqua from "../assets/turq.svg";
+import test from "../assets/test.svg";
 
 function About(props) {
   return (
@@ -59,7 +59,7 @@ function About(props) {
           </p>
         </div>
 
-        <div className="image-cont-3">
+        <div className="image-cont">
           <img
             src={four}
             style={{
@@ -84,7 +84,7 @@ function About(props) {
           sexual health throughout the lifespan.
         </p>
         <div className="final">
-          <div className="image-cont-4">
+          <div className="image-cont">
             <img src={two} />
           </div>
           <p className="bio1">
