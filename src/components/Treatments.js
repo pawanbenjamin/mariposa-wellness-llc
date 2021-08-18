@@ -20,9 +20,7 @@ function Treatments(props) {
             restore balance, which results in activating an individual’s
             self-healing ability”
             <br />
-            <a href="http://coresynchronism.org/">
-              http://coresynchronism.org/
-            </a>
+            <a href="http://coresynchronism.org/">More Info Here</a>
           </p>
         </div>
         <div className="t-image-cont">
