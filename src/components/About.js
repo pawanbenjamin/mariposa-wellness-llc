@@ -6,17 +6,21 @@ import two from "../assets/bio-pics/two.jpg";
 import three from "../assets/bio-pics/three.jpg";
 import four from "../assets/bio-pics/four.jpg";
 
-import test from "../assets/test.svg";
+import test from "../assets/three-yellows.svg";
+import blueWave from "../assets/blue-wave.svg";
+import greenButterfly from "../assets/green-butterfly.svg";
 
 function About(props) {
   return (
     <div className="about">
       <div className="head-cont">
+        <img src={test} className="yellow-thing" />
         <h1>About Marisa</h1>
         <span>(She/Ella)</span>
       </div>
 
       <div className="container">
+        {/* <img src={greenButterfly} className="bio-pic" /> */}
         <div className="image-cont">
           <img src={one} />
         </div>
@@ -42,6 +46,7 @@ function About(props) {
           <img src={three} width="300px" />
         </div>
         <div className="withRic">
+          <img src={blueWave} className="blue-wave" />
           <p className="bio1">
             As a college student I studied physical therapy at the University of
             Connecticut graduating in 2004. At school I was always passionate

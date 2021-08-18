@@ -47,6 +47,19 @@
   align-items: center;
   flex-direction: column;
   white-space: nowrap;
+  position: relative;
+}
+
+.yellow-thing {
+  position: absolute;
+  z-index: -1;
+  left: 13rem;
+}
+
+@media screen and (max-width: 500px) {
+  .yellow-thing {
+    left: 0;
+  }
 }
 
 .head-cont h1 {
@@ -66,12 +79,23 @@ span {
   margin-right: 15%;
   margin-left: 15%;
   font-size: 20px;
+  position: relative;
 }
 
 .container p {
-  color: rgb(0, 0, 0);
-
+  text-align: center !important;
+  color: rgb(62, 27, 77);
+  font-weight: 500;
   text-align: left;
+  position: relative;
+  text-shadow: 1px 1px 3px rgb(224, 150, 52);
+}
+
+.bio-pic {
+  position: absolute;
+  z-index: -1;
+  right: 5rem;
+  top: 90%;
 }
 .mari-karuna {
   clip-path: polygon(90% 0, 100% 50%, 86% 100%, 29% 100%, 0 68%, 0% 0%);
@@ -81,8 +105,15 @@ span {
   display: flex;
   justify-content: center;
   margin-right: 10px;
+  position: relative;
   /* margin-right: 15%;
   margin-left: 15%; */
+}
+
+.blue-wave {
+  position: absolute;
+  z-index: -1;
+  left: 0;
 }
 
 .withRic p {
@@ -184,6 +215,7 @@ span {
   }
 }
 
+/* for ipad */
 @media only screen and (device-width: 768px) {
   .image-cont {
     display: flex;
@@ -202,6 +234,10 @@ span {
     justify-content: center;
     height: 400px;
     margin-bottom: 5%;
+  }
+
+  .yellow-thing {
+    left: 0;
   }
 }
 
