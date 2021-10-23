@@ -183,7 +183,7 @@ function Nav(props) {
         <Hidden smUp>
           <MenuRoundedIcon
             fontSize="large"
-            aria-controls="simple-menu"
+            // aria-controls="simple-menu"
             aria-haspopup="true"
             onClick={handleClick}
           >
